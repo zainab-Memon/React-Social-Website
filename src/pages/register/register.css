@@ -1,0 +1,90 @@
+.register__container {
+  width: 100w;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__wrapper {
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+.register__left,
+.register__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register__logo {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+.register__desc {
+  font-size: 24px;
+}
+.register__box {
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.register__input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.register__input:focus {
+  outline: none;
+}
+.register__button-signup {
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1775ee;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Register__button-login {
+  height: 50px;
+  width: max-content;
+  padding: 0 20px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #42b72a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .register__wrapper {
+    flex-direction: column;
+    height: 60%;
+
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .register__left {
+    text-align: center;
+  }
+  .Register__button-login {
+    width: 100%;
+  }
+}
